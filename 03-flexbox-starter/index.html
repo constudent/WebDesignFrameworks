@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en-IE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Week 03 starter — Compass header/nav, support cells &amp; filter row
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Hanken+Grotesk:wght@500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/app.css" />
+  </head>
+  <body class="bg-paper font-sans text-ink">
+    <!-- Base colour and type (bg-paper, font-sans, text-ink) are already
+         here, same three classes as weeks 1 and 2 — nothing new to add.
+         Nothing below has a layout class yet, though: the header row, the
+         nav links, the support cells, and the filter row's fieldsets are
+         all still in normal document flow, everything just stacking block
+         by block. That's what Flexbox is for. -->
+
+    <header>
+      <div>
+        <a href="index.html">
+          <span aria-hidden="true"></span>
+          Compass
+        </a>
+        <nav class="flex items-center justify-between bg-ink-deep p-4 text-on-dark">
+  <span class="font-display font-bold">Brand</span>
+  <div class="flex gap-4">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="find-support-services.html">Find support services</a>
+    <a href="student-stories.html">Student stories</a>
+    <a href="accommodations-faq.html">Accommodations FAQ</a>
+    <a href="events.html">Events &amp; drop-ins</a>
+    <a href="request-support.html">Request support</a>
+  </div>
+</nav>
+    </header>
+
+    <main>
+      <div class="flex gap-4">
+  <div class="flex-1 bg-lime p-4">Study skills</div>
+  <div class="flex-1 bg-black p-4 text-on-dark">Assistive technology</div>
+  <div class="flex-1 bg-green p-4">Wellbeing</div>
+  <div class="flex-1 bg-pink p-4">Social & peer</div>
+</div>
+
+  <div class="flex flex-wrap gap-2">
+  <span class="rounded-full bg-lime px-3 py-1 text-on-light">Wellbeing</span>
+  <span class="rounded-full bg-lime px-3 py-1 text-on-light">Online</span>
+  <span class="rounded-full bg-lime px-3 py-1 text-on-light">City campus</span>
+  <span class="rounded-full bg-lime px-3 py-1 text-on-light">Drop-in</span>
+  <span class="rounded-full bg-lime px-3 py-1 text-on-light"
+    >Book a place</span
+  >
+</div>
+
+<div class="flex-1 items-center justify-center bg-paper">
+  <div class="bg-black p-4 text-green">How Compass can help</div>
+</div>
+
+<div class="flex h-64 flex-col gap-2 border-(length:--rule) border-ink p-5">
+  <h3 class="font-bold">Card title</h3>
+  <p>Some body copy, short or long, it doesn't matter.</p>
+  <button
+    class="mt-auto inline-block border-(length:--rule) border-ink bg-transparent px-4 py-2 font-bold text-ink"
+  >
+    Action
+  </button>
+</div>
+      <!-- Colour, border, padding, and type here are exactly what you built
+           in week 2 — carried over as given, so this week is only about
+           the one thing that's new: the icon still sits inline next to its
+           label instead of stacked above it, because nothing here is
+           flex yet. -->
+      <ul class="list-none border-t-(length:--rule) border-ink pl-0">
+        <li
+          class="border-b-(length:--rule) border-ink bg-lime p-8 text-center text-on-light"
+        >
+          <svg
+            class="h-14 w-14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path
+              d="M4 5.5C4 4.67 4.67 4 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5v-13Z"
+            />
+            <path
+              d="M20 5.5c0-.83-.67-1.5-1.5-1.5H13v16h5.5c.83 0 1.5-.67 1.5-1.5v-13Z"
+            />
+          </svg>
+          <span class="font-display text-lg font-bold">Study skills</span>
+        </li>
+        <li
+          class="border-b-(length:--rule) border-ink bg-ink-deep p-8 text-center text-on-dark"
+        >
+          <svg
+            class="h-14 w-14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M4 13v-1a8 8 0 0 1 16 0v1" />
+            <rect x="3" y="13" width="4" height="7" rx="1.5" />
+            <rect x="17" y="13" width="4" height="7" rx="1.5" />
+          </svg>
+          <span class="font-display text-lg font-bold"
+            >Assistive technology</span
+          >
+        </li>
+        <li
+          class="border-b-(length:--rule) border-ink bg-green p-8 text-center text-on-light"
+        >
+          <svg
+            class="h-14 w-14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 20.5s-7.5-4.6-9.8-9.2C.6 7.8 2.4 4.5 6 4.2c2-.2 3.7.9 6 3.2 2.3-2.3 4-3.4 6-3.2 3.6.3 5.4 3.6 3.8 7.1C19.5 15.9 12 20.5 12 20.5Z"
+            />
+          </svg>
+          <span class="font-display text-lg font-bold">Wellbeing</span>
+        </li>
+        <li
+          class="border-b-(length:--rule) border-ink bg-pink p-8 text-center text-on-light"
+        >
+          <svg
+            class="h-14 w-14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="8.5" cy="8" r="3" />
+            <path d="M2.5 20c0-3.3 2.7-6 6-6s6 2.7 6 6" />
+            <circle cx="17" cy="9" r="2.5" />
+            <path d="M15.5 14.2c2.9.4 5 2.9 5 5.8" />
+          </svg>
+          <span class="font-display text-lg font-bold">Social &amp; peer</span>
+        </li>
+      </ul>
+
+      <form aria-labelledby="filter-heading" method="get" action="#">
+        <h2 id="filter-heading">Filter services</h2>
+
+        <div>
+          <fieldset>
+            <legend>Category</legend>
+            <label
+              ><input type="checkbox" name="category" value="study-skills" />
+              Study skills</label
+            >
+            <label
+              ><input type="checkbox" name="category" value="assistive-tech" />
+              Assistive technology</label
+            >
+            <label
+              ><input type="checkbox" name="category" value="wellbeing" />
+              Wellbeing</label
+            >
+            <label
+              ><input type="checkbox" name="category" value="financial" />
+              Financial</label
+            >
+            <label
+              ><input type="checkbox" name="category" value="social" /> Social
+              &amp; peer</label
+            >
+          </fieldset>
+
+          <fieldset>
+            <legend>Format</legend>
+            <label
+              ><input type="checkbox" name="format" value="in-person" /> In
+              person</label
+            >
+            <label
+              ><input type="checkbox" name="format" value="online" />
+              Online</label
+            >
+            <label
+              ><input type="checkbox" name="format" value="email" />
+              Email</label
+            >
+          </fieldset>
+
+          <fieldset>
+            <legend>Campus</legend>
+            <label
+              ><input type="checkbox" name="campus" value="city" /> City</label
+            >
+            <label
+              ><input type="checkbox" name="campus" value="riverside" />
+              Riverside</label
+            >
+            <label
+              ><input type="checkbox" name="campus" value="online-only" />
+              Online only</label
+            >
+          </fieldset>
+        </div>
+      </form>
+    </main>
+
+    <!-- Homework target: build this into a real footer link list using
+         gap-x-*/gap-y-*. Nothing here has a class yet either. -->
+    <footer>
+
+      <nav aria-label="Footer">
+        <ul>
+          <li>
+            <a href="find-support-services.html">Find support services</a>
+          </li>
+          <li><a href="accommodations-faq.html">Accommodations FAQ</a></li>
+          <li><a href="events.html">Events &amp; drop-ins</a></li>
+          <li><a href="request-support.html">Request support</a></li>
+        </ul>
+      </nav>
+
+        <div class="flex min-h-screen flex-col">
+  <header class="bg-ink-deep p-4 text-on-dark">Header</header>
+  <main class="flex-1 p-4">Main content, however tall it needs to be</main>
+  <footer class="mt-auto bg-paper p-4">Footer, always at the bottom</footer>
+</div>
+
+
+
+    </footer>
+  </body>
+</html>
