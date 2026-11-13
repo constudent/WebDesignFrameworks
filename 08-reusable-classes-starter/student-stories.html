@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en-IE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Week 8 starter: Compass student stories, utilities only</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Hanken+Grotesk:wght@500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/app.css" />
+  </head>
+  <body class="bg-paper font-sans leading-relaxed text-ink">
+    <!-- Week 8 starter, for the in-class challenge. Compass's three story cards with every style written as utility classes. Headings and paragraphs keep their utilities in the solution too: Compass styles them in a part of its stylesheet this week doesn't cover. Your job is the cards. -->
+    <main
+      id="main"
+      class="mx-auto max-w-5xl space-y-[clamp(1rem,0.8rem+1vw,1.75rem)] px-5 py-[clamp(2rem,1.5rem+2vw,3.5rem)]"
+    >
+      <h1
+        class="font-display text-display leading-[0.98] font-black tracking-[-0.03em] text-balance"
+      >
+        Student stories
+      </h1>
+      <p class="max-w-[66ch] text-pretty">
+        Three students agreed to share what getting support actually looked
+        like, the awkward first email included. Names are their own; they chose
+        what to tell.
+      </p>
+
+      <ul
+        class="grid list-none grid-cols-[repeat(auto-fill,minmax(15rem,1fr))] gap-6 border-t-(length:--rule) border-l-(length:--rule) border-ink p-0"
+      >
+        <li class="flex max-w-none">
+          <article
+            class="group flex flex-1 flex-col gap-2.5 border-t-4 border-r-(length:--rule) border-b-(length:--rule) border-ink border-t-green bg-paper p-6 transition-colors duration-120 focus-within:border-link hover:border-link"
+            aria-labelledby="story-aoife"
+          >
+            <div
+              class="mb-1 h-24 w-24 overflow-hidden rounded-full border-(length:--rule) border-ink"
+              aria-hidden="true"
+            >
+              <img
+                src="assets/aoife-doodle.png"
+                alt=""
+                class="h-full w-full object-cover"
+                width="400"
+                height="322"
+              />
+            </div>
+            <h2
+              id="story-aoife"
+              class="m-0 font-display text-h2 leading-[0.98] font-extrabold tracking-[-0.02em] text-balance"
+            >
+              Aoife
+            </h2>
+            <p
+              class="inline-block rounded-full bg-green px-3 py-1 font-display text-base font-bold text-on-light"
+            >
+              Second-year Psychology
+            </p>
+            <blockquote
+              class="m-0 border-l-(length:--rule) border-green pl-3.5"
+            >
+              <span
+                aria-hidden="true"
+                class="mb-0.5 block font-display text-3xl leading-none font-black text-link"
+                >&ldquo;</span
+              >
+              <p class="max-w-[66ch] text-pretty">
+                I thought asking for help meant I was behind. It turned out to
+                be the thing that let me catch up.
+              </p>
+            </blockquote>
+            <p class="max-w-[66ch] text-pretty">
+              <a
+                class="inline-block font-bold text-link decoration-[0.1em] underline-offset-[0.2em] transition-[text-decoration-thickness] duration-120 group-focus-within:decoration-[0.18em] group-hover:decoration-[0.18em] focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-link"
+                href="student-stories/aoife.html"
+                >Read Aoife&rsquo;s story</a
+              >
+            </p>
+          </article>
+        </li>
+        <li class="flex max-w-none">
+          <article
+            class="group flex flex-1 flex-col gap-2.5 border-t-4 border-r-(length:--rule) border-b-(length:--rule) border-ink border-t-lime bg-paper p-6 transition-colors duration-120 focus-within:border-link hover:border-link"
+            aria-labelledby="story-marcus"
+          >
+            <div
+              class="mb-1 h-24 w-24 overflow-hidden rounded-full border-(length:--rule) border-ink"
+              aria-hidden="true"
+            >
+              <img
+                src="assets/marcus-doodle.png"
+                alt=""
+                class="h-full w-full object-cover"
+                style="object-position: 88% 22%"
+                width="400"
+                height="271"
+              />
+            </div>
+            <h2
+              id="story-marcus"
+              class="m-0 font-display text-h2 leading-[0.98] font-extrabold tracking-[-0.02em] text-balance"
+            >
+              Marcus
+            </h2>
+            <p
+              class="inline-block rounded-full bg-lime px-3 py-1 font-display text-base font-bold text-on-light"
+            >
+              First-year Computer Science
+            </p>
+            <blockquote class="m-0 border-l-(length:--rule) border-lime pl-3.5">
+              <span
+                aria-hidden="true"
+                class="mb-0.5 block font-display text-3xl leading-none font-black text-link"
+                >&ldquo;</span
+              >
+              <p class="max-w-[66ch] text-pretty">
+                Nobody made me mask. That was new, and it changed how much
+                energy I had left for the actual work.
+              </p>
+            </blockquote>
+            <p class="max-w-[66ch] text-pretty">
+              <a
+                class="inline-block font-bold text-link decoration-[0.1em] underline-offset-[0.2em] transition-[text-decoration-thickness] duration-120 group-focus-within:decoration-[0.18em] group-hover:decoration-[0.18em] focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-link"
+                href="student-stories/marcus.html"
+                >Read Marcus&rsquo;s story</a
+              >
+            </p>
+          </article>
+        </li>
+        <li class="flex max-w-none">
+          <article
+            class="group flex flex-1 flex-col gap-2.5 border-t-4 border-r-(length:--rule) border-b-(length:--rule) border-ink border-t-pink bg-paper p-6 transition-colors duration-120 focus-within:border-link hover:border-link"
+            aria-labelledby="story-priya"
+          >
+            <div
+              class="mb-1 h-24 w-24 overflow-hidden rounded-full border-(length:--rule) border-ink"
+              aria-hidden="true"
+            >
+              <img
+                src="assets/priya-doodle.png"
+                alt=""
+                class="h-full w-full object-cover"
+                style="object-position: 18% 20%"
+                width="400"
+                height="231"
+              />
+            </div>
+            <h2
+              id="story-priya"
+              class="m-0 font-display text-h2 leading-[0.98] font-extrabold tracking-[-0.02em] text-balance"
+            >
+              Priya
+            </h2>
+            <p
+              class="inline-block rounded-full bg-pink px-3 py-1 font-display text-base font-bold text-on-light"
+            >
+              Final-year Architecture
+            </p>
+            <blockquote class="m-0 border-l-(length:--rule) border-pink pl-3.5">
+              <span
+                aria-hidden="true"
+                class="mb-0.5 block font-display text-3xl leading-none font-black text-link"
+                >&ldquo;</span
+              >
+              <p class="max-w-[66ch] text-pretty">
+                The accommodations were fine. What helped most was the room
+                where I could just work next to other people.
+              </p>
+            </blockquote>
+            <p class="max-w-[66ch] text-pretty">
+              <a
+                class="inline-block font-bold text-link decoration-[0.1em] underline-offset-[0.2em] transition-[text-decoration-thickness] duration-120 group-focus-within:decoration-[0.18em] group-hover:decoration-[0.18em] focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-link"
+                href="student-stories/priya.html"
+                >Read Priya&rsquo;s story</a
+              >
+            </p>
+          </article>
+        </li>
+      </ul>
+
+      <p class="max-w-[66ch] text-pretty">
+        Would you share yours?
+        <a
+          class="font-bold text-link decoration-[0.1em] underline-offset-[0.25em] hover:decoration-[0.18em] focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-link"
+          href="request-support.html"
+          >Get in touch</a
+        >. There is no pressure, and you can stay anonymous.
+      </p>
+    </main>
+  </body>
+</html>

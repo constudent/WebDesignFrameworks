@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* Trimmed from reference/styles/app.css: the tokens these pages use, the same
+   ones you wrote in week 7. */
+@theme {
+  /* fonts: --font-* makes the font-display and font-sans utilities */
+  --font-display: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-sans:
+    "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* colours: --color-* makes bg-*, text-*, border-* and the rest */
+  --color-paper: #f0eee3;
+  --color-ink: #16220e;
+  --color-ink-deep: #0a2107;
+  --color-green: #54d98c;
+  --color-lime: #d8f16b;
+  --color-pink: #f7c2dd;
+  --color-link: #0b5c2a;
+  --color-on-light: #16220e;
+  --color-on-dark: #f0eee3;
+
+  /* text sizes: --text-* makes the text-display and text-h2 utilities */
+  --text-display: clamp(2.5rem, 1.6rem + 4vw, 5rem);
+  --text-h2: clamp(1.75rem, 1.4rem + 1.6vw, 2.5rem);
+}
+
+/* A plain variable, not a token: no utility is wanted, so it sits outside
+   @theme. The page reads it with border-(length:--rule). */
+:root {
+  --rule: 1.5px;
+}
+
+/* Compass's own rule for people who ask their device for less movement:
+   nothing fades or slides. It is copied here unchanged, and week 11 explains it. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

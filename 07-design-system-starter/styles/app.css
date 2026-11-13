@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+/* Week 7: this is where your tokens go. The page in index.html already uses
+   them by name, but nothing defines them yet, so it has no colours, fonts or
+   sizes. Follow the lesson to write the @theme section. */

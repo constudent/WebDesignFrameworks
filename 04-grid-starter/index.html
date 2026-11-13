@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en-IE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Week 04 starter — Compass hero, events days &amp; numbered rows
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Hanken+Grotesk:wght@500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/app.css" />
+  </head>
+  <body class="bg-paper font-sans leading-relaxed text-ink">
+    <!-- Colour, type, spacing and borders are already here, carried over
+         from weeks 1 to 3. Nothing below has a layout class yet, so
+         everything just stacks. That's what this week fixes. Three targets, in
+         order: the hero, the events day sections, the numbered rows. -->
+    <main>
+      <!-- Target 1: hero. Week 1's text, plus Compass's doodle. -->
+      <section aria-labelledby="intro-heading">
+        <div class="mx-auto max-w-5xl px-5 py-[clamp(2.5rem,1.5rem+4vw,5rem)]">
+          <div>
+            <p
+              class="font-display text-base font-bold tracking-[0.08em] text-link uppercase"
+            >
+              Neurodivergent student support
+            </p>
+            <h1
+              id="intro-heading"
+              class="mt-4 font-display text-display leading-none font-black tracking-[-0.03em] text-balance"
+            >
+              Support that works the way you do
+            </h1>
+            <p class="mt-4 max-w-[66ch] text-pretty">
+              Compass is the neurodivergent student support service at Riverside
+              University. Whether you are diagnosed, self-identified, or still
+              working things out, you can use everything here. You do not need a
+              report or a referral to get started.
+            </p>
+            <p class="mt-6">
+              <a
+                class="inline-block border-(length:--rule) border-ink bg-transparent px-6 py-2.5 font-display font-extrabold text-ink no-underline"
+                href="#"
+                >Request support</a
+              >
+            </p>
+          </div>
+          <div class="mx-auto w-full max-w-sm">
+            <img
+              src="images/hero-student-doodle.png"
+              alt=""
+              width="359"
+              height="400"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Target 2: events. Three of Compass's day sections. -->
+      <h2
+        class="mx-auto max-w-5xl px-5 pt-16 pb-6 font-display text-h2 leading-none font-extrabold tracking-tight"
+      >
+        This week's drop-ins
+      </h2>
+      <div class="border-t-(length:--rule) border-ink">
+        <section
+          class="border-b-(length:--rule) border-ink bg-paper"
+          aria-labelledby="mon-heading"
+        >
+          <h2
+            id="mon-heading"
+            class="m-0 flex items-center gap-2 bg-green px-4 py-2.5 font-display text-h2 leading-none font-extrabold tracking-tight text-on-light"
+          >
+            Monday
+          </h2>
+          <div class="p-4">
+            <article
+              class="flex flex-col gap-2 rounded-2xl border-(length:--rule) border-ink bg-paper p-5"
+            >
+              <span
+                class="mb-1 inline-flex h-10 w-10 items-center justify-center rounded-full bg-green text-on-light"
+                aria-hidden="true"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M15 19.1276C15.8329 19.37 16.7138 19.5 17.625 19.5C19.1037 19.5 20.5025 19.1576 21.7464 18.5478C21.7488 18.4905 21.75 18.4329 21.75 18.375C21.75 16.0968 19.9031 14.25 17.625 14.25C16.2069 14.25 14.956 14.9655 14.2136 16.0552M15 19.1276V19.125C15 18.0121 14.7148 16.9658 14.2136 16.0552M15 19.1276C15 19.1632 14.9997 19.1988 14.9991 19.2343C13.1374 20.3552 10.9565 21 8.625 21C6.29353 21 4.11264 20.3552 2.25092 19.2343C2.25031 19.198 2.25 19.1615 2.25 19.125C2.25 15.6042 5.10418 12.75 8.625 12.75C11.0329 12.75 13.129 14.085 14.2136 16.0552M12 6.375C12 8.23896 10.489 9.75 8.625 9.75C6.76104 9.75 5.25 8.23896 5.25 6.375C5.25 4.51104 6.76104 3 8.625 3C10.489 3 12 4.51104 12 6.375ZM20.25 8.625C20.25 10.0747 19.0747 11.25 17.625 11.25C16.1753 11.25 15 10.0747 15 8.625C15 7.17525 16.1753 6 17.625 6C19.0747 6 20.25 7.17525 20.25 8.625Z"
+                  />
+                </svg>
+              </span>
+              <h3 class="m-0 text-xl font-black">Co-working room</h3>
+              <p>
+                <time datetime="10:00" class="font-display font-bold text-link"
+                  >10:00</time
+                >&ndash;<time
+                  datetime="13:00"
+                  class="font-display font-bold text-link"
+                  >13:00</time
+                >
+              </p>
+              <p class="text-base font-bold tracking-[0.03em] uppercase">
+                Drop-in &middot; In person &middot; Riverside, Library room 2.14
+              </p>
+              <p>
+                Quiet body-doubling space. Bring your own work; headphones
+                welcome.
+              </p>
+            </article>
+            <article
+              class="flex flex-col gap-2 rounded-2xl border-(length:--rule) border-ink bg-paper p-5"
+            >
+              <span
+                class="mb-1 inline-flex h-10 w-10 items-center justify-center rounded-full bg-green text-on-light"
+                aria-hidden="true"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M9 17.25V18.2574C9 19.053 8.68393 19.8161 8.12132 20.3787L7.5 21H16.5L15.8787 20.3787C15.3161 19.8161 15 19.053 15 18.2574V17.25M21 5.25V15C21 16.2426 19.9926 17.25 18.75 17.25H5.25C4.00736 17.25 3 16.2426 3 15V5.25M21 5.25C21 4.00736 19.9926 3 18.75 3H5.25C4.00736 3 3 4.00736 3 5.25M21 5.25V12C21 13.2426 19.9926 14.25 18.75 14.25H5.25C4.00736 14.25 3 13.2426 3 12V5.25"
+                  />
+                </svg>
+              </span>
+              <h3 class="m-0 text-xl font-black">
+                Assistive technology clinic
+              </h3>
+              <p>
+                <time datetime="14:00" class="font-display font-bold text-link"
+                  >14:00</time
+                >&ndash;<time
+                  datetime="16:00"
+                  class="font-display font-bold text-link"
+                  >16:00</time
+                >
+              </p>
+              <p class="text-base font-bold tracking-[0.03em] uppercase">
+                Book a place &middot; In person &middot; City, Student Services
+                1.03
+              </p>
+              <p>
+                Thirty-minute slots to set up and learn a tool that suits you.
+              </p>
+            </article>
+          </div>
+        </section>
+        <section
+          class="border-b-(length:--rule) border-ink bg-paper"
+          aria-labelledby="tue-heading"
+        >
+          <h2
+            id="tue-heading"
+            class="m-0 flex items-center gap-2 bg-lime px-4 py-2.5 font-display text-h2 leading-none font-extrabold tracking-tight text-on-light"
+          >
+            Tuesday
+          </h2>
+          <div class="p-4">
+            <article
+              class="flex flex-col gap-2 rounded-2xl border-(length:--rule) border-ink bg-paper p-5"
+            >
+              <span
+                class="mb-1 inline-flex h-10 w-10 items-center justify-center rounded-full bg-lime text-on-light"
+                aria-hidden="true"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M20.25 8.51104C21.1341 8.79549 21.75 9.6392 21.75 10.6082V14.8938C21.75 16.0304 20.9026 16.9943 19.7697 17.0867C19.4308 17.1144 19.0909 17.1386 18.75 17.1592V20.25L15.75 17.25C14.3963 17.25 13.0556 17.1948 11.7302 17.0866C11.4319 17.0623 11.1534 16.9775 10.9049 16.8451M20.25 8.51104C20.0986 8.46232 19.9393 8.43 19.7739 8.41628C18.4472 8.30616 17.1051 8.25 15.75 8.25C14.3948 8.25 13.0528 8.30616 11.7261 8.41627C10.595 8.51015 9.75 9.47323 9.75 10.6082V14.8937C9.75 15.731 10.2099 16.4746 10.9049 16.8451M20.25 8.51104V6.63731C20.25 5.01589 19.0983 3.61065 17.4903 3.40191C15.4478 3.13676 13.365 3 11.2503 3C9.13533 3 7.05233 3.13678 5.00963 3.40199C3.40173 3.61074 2.25 5.01598 2.25 6.63738V12.8626C2.25 14.484 3.40173 15.8893 5.00964 16.098C5.58661 16.1729 6.16679 16.2376 6.75 16.2918V21L10.9049 16.8451"
+                  />
+                </svg>
+              </span>
+              <h3 class="m-0 text-xl font-black">Adviser drop-in</h3>
+              <p>
+                <time datetime="11:00" class="font-display font-bold text-link"
+                  >11:00</time
+                >&ndash;<time
+                  datetime="13:00"
+                  class="font-display font-bold text-link"
+                  >13:00</time
+                >
+              </p>
+              <p class="text-base font-bold tracking-[0.03em] uppercase">
+                Drop-in &middot; In person &middot; City, Student Services
+                ground floor
+              </p>
+              <p>
+                Ask a question, start an accommodation, or just find out what is
+                available.
+              </p>
+            </article>
+            <article
+              class="flex flex-col gap-2 rounded-2xl border-(length:--rule) border-ink bg-paper p-5"
+            >
+              <span
+                class="mb-1 inline-flex h-10 w-10 items-center justify-center rounded-full bg-lime text-on-light"
+                aria-hidden="true"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M20.25 8.51104C21.1341 8.79549 21.75 9.6392 21.75 10.6082V14.8938C21.75 16.0304 20.9026 16.9943 19.7697 17.0867C19.4308 17.1144 19.0909 17.1386 18.75 17.1592V20.25L15.75 17.25C14.3963 17.25 13.0556 17.1948 11.7302 17.0866C11.4319 17.0623 11.1534 16.9775 10.9049 16.8451M20.25 8.51104C20.0986 8.46232 19.9393 8.43 19.7739 8.41628C18.4472 8.30616 17.1051 8.25 15.75 8.25C14.3948 8.25 13.0528 8.30616 11.7261 8.41627C10.595 8.51015 9.75 9.47323 9.75 10.6082V14.8937C9.75 15.731 10.2099 16.4746 10.9049 16.8451M20.25 8.51104V6.63731C20.25 5.01589 19.0983 3.61065 17.4903 3.40191C15.4478 3.13676 13.365 3 11.2503 3C9.13533 3 7.05233 3.13678 5.00963 3.40199C3.40173 3.61074 2.25 5.01598 2.25 6.63738V12.8626C2.25 14.484 3.40173 15.8893 5.00964 16.098C5.58661 16.1729 6.16679 16.2376 6.75 16.2918V21L10.9049 16.8451"
+                  />
+                </svg>
+              </span>
+              <h3 class="m-0 text-xl font-black">Adviser drop-in (online)</h3>
+              <p>
+                <time datetime="15:00" class="font-display font-bold text-link"
+                  >15:00</time
+                >&ndash;<time
+                  datetime="16:30"
+                  class="font-display font-bold text-link"
+                  >16:30</time
+                >
+              </p>
+              <p class="text-base font-bold tracking-[0.03em] uppercase">
+                Drop-in &middot; Online &middot; Link on the student portal
+              </p>
+              <p>Same as the in-person drop-in, from wherever you are.</p>
+            </article>
+          </div>
+        </section>
+        <section
+          class="border-b-(length:--rule) border-ink bg-paper"
+          aria-labelledby="wed-heading"
+        >
+          <h2
+            id="wed-heading"
+            class="m-0 flex items-center gap-2 bg-pink px-4 py-2.5 font-display text-h2 leading-none font-extrabold tracking-tight text-on-light"
+          >
+            Wednesday
+          </h2>
+          <div class="p-4">
+            <article
+              class="flex flex-col gap-2 rounded-2xl border-(length:--rule) border-ink bg-paper p-5"
+            >
+              <span
+                class="mb-1 inline-flex h-10 w-10 items-center justify-center rounded-full bg-pink text-on-light"
+                aria-hidden="true"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M15 19.1276C15.8329 19.37 16.7138 19.5 17.625 19.5C19.1037 19.5 20.5025 19.1576 21.7464 18.5478C21.7488 18.4905 21.75 18.4329 21.75 18.375C21.75 16.0968 19.9031 14.25 17.625 14.25C16.2069 14.25 14.956 14.9655 14.2136 16.0552M15 19.1276V19.125C15 18.0121 14.7148 16.9658 14.2136 16.0552M15 19.1276C15 19.1632 14.9997 19.1988 14.9991 19.2343C13.1374 20.3552 10.9565 21 8.625 21C6.29353 21 4.11264 20.3552 2.25092 19.2343C2.25031 19.198 2.25 19.1615 2.25 19.125C2.25 15.6042 5.10418 12.75 8.625 12.75C11.0329 12.75 13.129 14.085 14.2136 16.0552M12 6.375C12 8.23896 10.489 9.75 8.625 9.75C6.76104 9.75 5.25 8.23896 5.25 6.375C5.25 4.51104 6.76104 3 8.625 3C10.489 3 12 4.51104 12 6.375ZM20.25 8.625C20.25 10.0747 19.0747 11.25 17.625 11.25C16.1753 11.25 15 10.0747 15 8.625C15 7.17525 16.1753 6 17.625 6C19.0747 6 20.25 7.17525 20.25 8.625Z"
+                  />
+                </svg>
+              </span>
+              <h3 class="m-0 text-xl font-black">Co-working room</h3>
+              <p>
+                <time datetime="12:00" class="font-display font-bold text-link"
+                  >12:00</time
+                >&ndash;<time
+                  datetime="16:00"
+                  class="font-display font-bold text-link"
+                  >16:00</time
+                >
+              </p>
+              <p class="text-base font-bold tracking-[0.03em] uppercase">
+                Drop-in &middot; In person &middot; Riverside, Library room 2.14
+              </p>
+              <p>Longer afternoon session. Tea and quiet company provided.</p>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <!-- Target 3: numbered rows. The hairlines (border-t, border-l) look
+           odd while the rows stack, and right once they sit in two
+           columns. -->
+      <section aria-labelledby="help-heading">
+        <div class="px-5 py-20">
+          <div aria-hidden="true"></div>
+          <h2
+            id="help-heading"
+            class="font-display text-[clamp(2.25rem,1.75rem+2.2vw,3.5rem)] leading-none font-extrabold tracking-tight text-link"
+          >
+            How Compass can help
+          </h2>
+        </div>
+        <ul class="border-y-(length:--rule) border-ink">
+          <li class="bg-paper text-ink">
+            <div class="px-5 py-[clamp(2.25rem,1.5rem+3vw,4rem)]">
+              <span
+                class="font-display text-[clamp(2rem,1.5rem+2vw,3rem)] leading-none font-black"
+                aria-hidden="true"
+                >01</span
+              >
+              <div>
+                <svg
+                  class="mb-3 h-9 w-9"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="10.5" cy="10.5" r="6.5" />
+                  <path d="M20 20l-4.8-4.8" />
+                </svg>
+                <h3
+                  class="mb-2 font-display text-h2 leading-none font-extrabold tracking-tight text-balance"
+                >
+                  Find a service
+                </h3>
+                <p>
+                  Browse study-skills sessions, assistive technology, wellbeing
+                  support, and more. Filter by what you need and how you want to
+                  meet.
+                </p>
+                <p>
+                  <a
+                    class="font-bold text-inherit underline"
+                    href="find-support-services.html"
+                    >Find support services</a
+                  >
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            class="border-l-(length:--rule) border-ink bg-green text-on-light"
+          >
+            <div class="px-5 py-[clamp(2.25rem,1.5rem+3vw,4rem)]">
+              <span
+                class="font-display text-[clamp(2rem,1.5rem+2vw,3rem)] leading-none font-black"
+                aria-hidden="true"
+                >02</span
+              >
+              <div>
+                <svg
+                  class="mb-3 h-9 w-9"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="4" y="3" width="16" height="18" rx="2" />
+                  <path d="M8 8h8M8 12l1.5 1.5L12 11M8 16h5" />
+                </svg>
+                <h3
+                  class="mb-2 font-display text-h2 leading-none font-extrabold tracking-tight text-balance"
+                >
+                  Arrange accommodations
+                </h3>
+                <p>
+                  Reasonable accommodations cover lectures, coursework, and
+                  exams. The FAQ explains how to put them in place and what to
+                  expect.
+                </p>
+                <p>
+                  <a
+                    class="font-bold text-inherit underline"
+                    href="accommodations-faq.html"
+                    >Read the accommodations FAQ</a
+                  >
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            class="border-t-(length:--rule) border-ink bg-ink-deep text-on-dark"
+          >
+            <div class="px-5 py-[clamp(2.25rem,1.5rem+3vw,4rem)]">
+              <span
+                class="font-display text-[clamp(2rem,1.5rem+2vw,3rem)] leading-none font-black"
+                aria-hidden="true"
+                >03</span
+              >
+              <div>
+                <svg
+                  class="mb-3 h-9 w-9"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8A2.5 2.5 0 0 1 17.5 16H10l-4.5 4v-4H6.5A2.5 2.5 0 0 1 4 13.5v-8Z"
+                  />
+                </svg>
+                <h3
+                  class="mb-2 font-display text-h2 leading-none font-extrabold tracking-tight text-balance"
+                >
+                  Talk to someone
+                </h3>
+                <p>
+                  Come to a drop-in, or send us a request and an adviser will
+                  get back to you within three working days.
+                </p>
+                <p>
+                  <a class="font-bold text-inherit underline" href="events.html"
+                    >See events &amp; drop-ins</a
+                  >
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            class="border-t-(length:--rule) border-l-(length:--rule) border-ink bg-pink text-on-light"
+          >
+            <div class="px-5 py-[clamp(2.25rem,1.5rem+3vw,4rem)]">
+              <span
+                class="font-display text-[clamp(2rem,1.5rem+2vw,3rem)] leading-none font-black"
+                aria-hidden="true"
+                >04</span
+              >
+              <div>
+                <svg
+                  class="mb-3 h-9 w-9"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M6.75 3V5.25M17.25 3V5.25M3 18.75V7.5C3 6.25736 4.00736 5.25 5.25 5.25H18.75C19.9926 5.25 21 6.25736 21 7.5V18.75M3 18.75C3 19.9926 4.00736 21 5.25 21H18.75C19.9926 21 21 19.9926 21 18.75M3 18.75V11.25C3 10.0074 4.00736 9 5.25 9H18.75C19.9926 9 21 10.0074 21 11.25V18.75M12 12.75H12.0075V12.7575H12V12.75ZM12 15H12.0075V15.0075H12V15ZM12 17.25H12.0075V17.2575H12V17.25ZM9.75 15H9.7575V15.0075H9.75V15ZM9.75 17.25H9.7575V17.2575H9.75V17.25ZM7.5 15H7.5075V15.0075H7.5V15ZM7.5 17.25H7.5075V17.2575H7.5V17.25ZM14.25 12.75H14.2575V12.7575H14.25V12.75ZM14.25 15H14.2575V15.0075H14.25V15ZM14.25 17.25H14.2575V17.2575H14.25V17.25ZM16.5 12.75H16.5075V12.7575H16.5V12.75ZM16.5 15H16.5075V15.0075H16.5V15Z"
+                  />
+                </svg>
+                <h3
+                  class="mb-2 font-display text-h2 leading-none font-extrabold tracking-tight text-balance"
+                >
+                  Join a drop-in
+                </h3>
+                <p>
+                  No appointment needed. Come to any session on the weekly
+                  timetable and see who is there.
+                </p>
+                <p>
+                  <a class="font-bold text-inherit underline" href="events.html"
+                    >See events &amp; drop-ins</a
+                  >
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
